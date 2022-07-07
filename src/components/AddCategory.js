@@ -8,7 +8,7 @@ export const AddCategory = ({ setCategories }) => {
     const [inputValue, setInputValue] = useState('');
     const handleInput = (e) => {
         setInputValue(e.target.value)
-        console.log(e.target.value);
+        console.log('HandleInputChange LLAMADO');
     }
     const handleSubmit = (e) => {
         //Esto se usa para prevenir que el fromulario se refresque solo

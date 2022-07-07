@@ -54,6 +54,6 @@ export const GifGrid = ({ category }) => {
     )
 }
 
-GifGrid.prototype = {
+GifGrid.propTypes = {
     category: PropTypes.string.isRequired
 }

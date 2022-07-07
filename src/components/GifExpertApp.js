@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { AddCategory } from "./AddCategory";
 import { GifGrid } from "./GifGrid";
 
-const GitExpertApp = () => {
+const GitExpertApp = ({ defaultCategories = []}) => {
 
     //const categories = ['One Punch', 'Samurai X', 'Dragon Ball'];
     //Como el array puede cambiar, puede tener mas o menos, usamos el useState
-    const [categories, setCategories]= useState(['Samurai X']);
+    const [categories, setCategories]= useState( defaultCategories );
     
     //const handleAdd = () => {
 
